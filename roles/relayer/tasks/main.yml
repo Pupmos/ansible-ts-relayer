@@ -1,0 +1,6 @@
+---
+- include: setup.yml
+  when: registry_url is not defined
+
+- include: launch.yml
+  when: registry_url is defined

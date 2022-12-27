@@ -1,0 +1,7 @@
+- name: Launch
+  hosts: "{{ target }}"
+  become: true
+  roles:
+    - relayer
+  vars:
+    node_type: relayer

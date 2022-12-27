@@ -1,0 +1,9 @@
+- name: Setup
+  hosts: "{{ target }}"
+  become: true
+  roles:
+    - common
+    - relayer
+    - monitoring
+  vars:
+    node_type: relayer

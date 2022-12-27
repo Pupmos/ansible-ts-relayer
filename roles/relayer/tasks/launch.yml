@@ -1,0 +1,16 @@
+---
+- name: Launch a relayer
+  docker_container:
+    name: "{{ container_name }}"
+    image: ghcr.io/notional-labs/tinyseed:latest
+    command: /scripts/entrypoint.sh
+    state: started
+    recreate: yes
+    restart_policy: always
+    env:
+      REGISTRY_URL: "{{ registry_url }}"
+      SRC: "{{ src }}"
+      DEST: "{{ dest }}"
+      SRC_CONNECTION: "{{ src_connection }}"
+      DEST_CONNECTION: "{{ dest_connection }}"
+      MNEMONIC: "{{ mnemonic }}"
