@@ -1,4 +1,4 @@
-# Ansible
+# Pupmos/ansible-ts-relayer
 
 An ansible playbook for setting up [ts-relayer](https://github.com/confio/ts-relayer).
 
@@ -13,9 +13,7 @@ _Ideally ansible should be installed via [pip](https://pip.pypa.io/en/stable/), 
 
 This README assumes that you've already installed `debian` or `ubuntu` onto the target environment/s.
 
-## Ansible
-
-### Setup
+## Setup
 
 1. Install the required git submodule dependencies:
 
