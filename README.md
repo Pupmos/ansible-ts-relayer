@@ -1,6 +1,6 @@
 # Pupmos/ansible-ts-relayer
 
-An ansible playbook for setting up [ts-relayer](https://github.com/confio/ts-relayer).
+An Ansible playbook for setting up [ts-relayer](https://github.com/confio/ts-relayer).
 
 ## Prerequisites
 
